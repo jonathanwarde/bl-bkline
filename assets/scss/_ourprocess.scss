@@ -1,0 +1,60 @@
+.our-process
+{
+	background:url(../images/our-process-bg.jpg);
+	padding-bottom:5rem;
+	position:relative;
+}
+
+.our-process h2,
+.team h2,
+.locations h2,
+.green-bar-centered {
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fff;
+    background: #008000;
+    text-align: center;
+    padding: 1.8rem;
+    margin-bottom: 5rem;
+}
+
+.process-step {
+    background: #E0F2F1;
+    /* padding-bottom: 69%; */
+    min-height: 20rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.process-step span {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    background: #4eb448;
+    color: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -.6rem;
+    left: -.6rem;
+}
+
+a.register
+{
+	display: inline-block;
+    background: #4eb448;
+    color: #fff;
+    /* width: 27rem; */
+    font-size: 1.8rem;
+    line-height: 1.2;
+    /* text-transform: uppercase; */
+    padding: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -3rem;
+    font-weight: 600;
+}

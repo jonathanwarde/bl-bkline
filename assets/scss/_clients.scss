@@ -1,0 +1,48 @@
+section.clients {
+    background: url(../images/clients-bg.jpg)no-repeat center center;
+    background-size: cover;
+    position: relative;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.clients h2 {
+    display: inline-block;
+    background: #4eb448;
+    color: #fff;
+    /* width: 27rem; */
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -4rem;
+    width:80%;
+}
+
+a.client {
+    display: inline-block;
+    width: 48%;
+    margin: 1% 1% 1% 0;
+}
+
+a.client:nth-child(3),
+a.client:nth-child(6) 
+{
+    margin: 2% 0 2% 0;
+}
+
+@media only screen and (min-width:768px){
+    .clients h2 {
+        font-size: 2rem;
+        width:auto;
+    }
+    a.client {
+        display: inline-block;
+        width: 28%;
+        margin: 2% 4% 2% 0;
+    }
+}

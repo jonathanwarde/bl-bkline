@@ -1,0 +1,24 @@
+.slick-logos
+{
+	margin: 4rem auto 1rem auto;
+}
+
+.slick-logos li 
+{
+	padding:5px;
+}
+
+.slick-logos li img
+{
+	transition: all .4s ease-in-out;
+  	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  	filter: grayscale(100%); /* FF 35+ */
+  	opacity: .8;
+}
+
+.slick-logos li img:hover
+{
+  	-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  	filter: grayscale(0%); /* FF 35+ */
+  	opacity: 1;
+}

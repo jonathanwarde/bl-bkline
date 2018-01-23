@@ -1,0 +1,95 @@
+#backline-map,
+#backline-map2
+{
+    padding-bottom: 60%;
+}
+
+section.team {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h3.team-role
+{
+	font-size: 1.5rem;
+    color: #00492e;
+    font-weight: 600;
+}
+
+.team-member p {
+    margin-bottom: 0;
+    /*border-bottom: 1px solid #444;*/
+}
+
+section.locations {
+    padding-top: 3rem;
+}
+
+section.locations h4 {
+    font-size: 1.5rem;
+    color: #00492e;
+    font-weight: 600;
+}
+
+section.locations h4 span
+{
+	color:#52BD48;
+	display:inline-block;
+}
+
+span.email {
+    background: url(../svg/email.svg);
+    width: 35px;
+    height: 35px;
+    display: none;
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: .5rem
+}
+
+span.tel {
+    background: url(../svg/phone.svg);
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: .5rem
+}
+
+span.twenty {
+    background: url(../svg/twenty.svg);
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: .5rem
+}
+
+span.twitter {
+    background: url(../svg/twitter.svg);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom
+}
+
+span.facebook {
+    background: url(../svg/facebook.svg);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom
+}
+
+span.instagram {
+    background: url(../svg/instagram.svg);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: bottom
+}

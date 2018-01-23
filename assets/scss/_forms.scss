@@ -1,0 +1,166 @@
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+
+-webkit-box-sizing: border-box;
+
+-moz-box-sizing: border-box;
+
+box-sizing: border-box;
+
+-webkit-background-clip: padding;
+
+-moz-background-clip: padding;
+
+background-clip:padding-box;
+
+-webkit-border-radius:0;
+
+-moz-border-radius:0;
+
+-ms-border-radius:0;
+
+-o-border-radius:0;
+
+border-radius:0;
+
+-webkit-appearance:none;
+
+outline:0;
+
+margin:0;
+
+padding:0;
+
+text-align: left;
+
+vertical-align: middle;
+
+margin-top: 0.5rem;
+margin-bottom: .5rem;
+
+width:100%;
+transition: all .2s linear;
+}
+
+
+
+input:focus,
+input:active,
+textarea:focus
+{
+	background:rgba(255,255,255,.4);
+	transition:all .2s linear;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+    opacity: .6;
+    transition:all .2s linear;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+	    height:8rem;
+}
+
+@media only screen and (min-width:1024px) {
+	textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]
+	{
+		display: inline-block;
+		width:76%;
+	}
+	label {
+	    display: inline-block;
+	    width: 24%;
+	    vertical-align: top;
+    	margin-top: 10px;
+	    white-space: nowrap;
+	}
+	textarea.wpcf7-form-control.wpcf7-textarea {
+	    height:139px;
+	    width: 69%;
+    	margin-left: 7%;
+	}
+	.input-wrap {
+	    text-align: left;
+	    display: inline-block;
+	    position: relative;
+	    top: -3.6rem;
+	    left: 2.5rem;
+	}
+}
+
+.gform_wrapper select, .gform_wrapper textarea,
+.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) 
+{
+    border: 1px solid #008000;
+}
+
+.gform_footer input[type="submit"]
+{
+    background: #4eb448;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .7rem 1rem;
+    line-height: 1;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+}
+
+#gform_wrapper_1
+{
+	display: block !important;
+}
+
+.gform_wrapper .percentbar_blue {
+    background-color: #52BD48 !important;
+}
+
+.gform_wrapper .gf_progressbar_percentage {
+	background:none;
+}
+
+.gform_column.one-half {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.gform_wrapper div.validation_error {
+    color: #52BD48 !important;
+    border-top: 2px solid #52BD48 !important;
+    border-bottom: 2px solid #52BD48 !important;
+}
+
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: rgba(1,1,1,.09) !important;
+    border-top: 1px solid #52BD48 !important;
+    border-bottom: 1px solid #52BD48 !important;
+}
+.gform_wrapper .gfield_error .gfield_label,
+.gform_wrapper .validation_message,
+.gform_wrapper .gfield_required,
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label, .gform_wrapper li.gfield_error ul.gfield_checkbox, .gform_wrapper li.gfield_error ul.gfield_radio {
+    color: #52BD48 !important;
+}
+
+.gform_wrapper .gf_step
+{
+    width:auto !important;
+    display:inline-block !important;
+}
+
+@media only screen and (min-width: 641px){
+.gform_wrapper .one-half.top_label input.medium, .gform_wrapper .top_label select.medium {
+    width: 89.5% !important;
+}
+}
+
+.gform_wrapper .gsection {
+    border-bottom: none !important;
+}
+
+@media only screen and (min-width: 1200px){
+
+    .gform_column.one-half {
+        width: 50%;
+    }
+}

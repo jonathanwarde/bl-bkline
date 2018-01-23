@@ -1,0 +1,61 @@
+.page-template-template-branches .green-bar-centered
+{
+	margin-bottom:0;
+}
+
+.page-template-template-branches #inner-content
+{
+	padding-bottom:0;
+}
+
+#branchesMap
+{
+	padding-bottom:40%;
+}
+
+.infoBox {
+    background: #52BD48;
+    padding: .8rem;
+    font-size: .8rem;
+    position: relative;
+    -webkit-box-shadow: 10px 12px 13px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 12px 13px -10px rgba(0,0,0,0.75);
+box-shadow: 10px 12px 13px -10px rgba(0,0,0,0.75);
+}
+
+.infoBox:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: none;
+    top: -14px;
+    left: 132px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 16.5px 14px 16.5px;
+    border-color: transparent transparent #52BD48 transparent;
+}
+
+.infoBox h6
+{
+	color: #fff;
+	font-weight: 700;
+}
+
+.infoBox img {
+    max-width: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.infoBox .brtel {
+    color: #fff;
+    background: #003f28;
+    margin-left: -12px;
+    margin-right: -13px;
+    margin-bottom: -12px;
+    padding: 5px 12px;
+    font-size: 1rem;
+}

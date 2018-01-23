@@ -1,0 +1,184 @@
+.svg-icon {
+    display: block;
+    width: 7rem;
+    min-height: 7rem;
+    margin: 0 auto;
+}
+
+.icon-final-mile {
+    background: url(../svg/finalmile.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-utilisation {
+    background: url(../svg/utilisation.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-drops {
+    background: url(../svg/drops.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-resource {
+    background: url(../svg/resource.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-compliance {
+    background: url(../svg/compliance.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-rates {
+    background: url(../svg/rates.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-location {
+    background: url(../svg/location.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-secure {
+    background: url(../svg/secure.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-dot {
+    background: url(../svg/dot.svg) center center no-repeat;
+    background-size: contain;
+}
+.icon-mile {
+    background: url(../svg/mile.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.green-ribbon {
+    color: #fff;
+    background: #4eb448;
+    text-align: center;
+    padding-bottom:1rem;
+}
+.green-ribbon h5
+{
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.green-ribbon p 
+{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	line-height: 1;
+}
+.green-ribbon a 
+{
+	font-weight:600;
+	transition:all .2s linear;
+}
+
+
+.bg-green-1 {
+    background: #58bc6b;
+    color: #fff;
+    text-align: center;
+}
+.bg-green-2 {
+    background: #73907c;
+    color: #fff;
+    text-align: center;
+}
+
+
+.icon-and-text {margin-top:2rem;}
+.icon-and-text h5
+{
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+@media only screen and (min-width:640px){
+	.main-content h2,
+	.testimonials h2
+	{
+		/*font-size: 2rem;*/
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+	}
+	.main-content p.large-p
+	{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.green-ribbon {
+	    text-align: left;
+	    padding-left: 1rem;
+	    position: relative;
+	    display: inline-block;
+		min-width: 18rem;
+		margin-top:2rem;
+	}
+	.green-ribbon::after {
+		    content: '';
+		    display: block;
+		    position: absolute;
+		    top: -.5rem;
+		    right: -2rem;
+		    width: 4rem;
+		    height: calc(100% + 2rem);
+		    background: #fff;
+		    transform: rotate(15deg);
+		    z-index: 0;
+	}
+	.green-ribbon .svg-icon.icon-final-mile
+	{
+		margin:0 !important;
+	}
+	.bg-top-right {
+	    background: url(../svg/circle-map.svg) top right no-repeat;
+	    background-size: 54%;
+	}
+}
+
+@media only screen and (min-width:768px){
+	
+}
+
+@media only screen and (min-width:960px){
+	.icon-and-text {
+	    padding: 0 8%;
+	}
+	.bg-top-right {
+	    background: url(../svg/circle-map.svg) top right no-repeat;
+		background-size: contain;
+		padding-bottom: 5rem;
+	}
+	.green-ribbon{
+		transition:all .2s ease;
+	}
+	.green-ribbon:hover {
+	    transform: translatex(3rem);
+	    background: #139241;
+	}
+
+    .green-ribbon:before
+    {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        transition:all .2s ease;
+        background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(78,180,72,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(78,180,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(78,180,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#4eb448',GradientType=1 ); /* IE6-9 */
+    }
+
+    .green-ribbon:hover:before
+    {
+    	background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(19, 146, 65, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(19, 146, 65, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(19, 146, 65, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#4eb448',GradientType=1 ); /* IE6-9 */
+    }
+
+}

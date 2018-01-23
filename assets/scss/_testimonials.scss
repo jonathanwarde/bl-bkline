@@ -1,0 +1,29 @@
+.testimonials {
+    background: #e9f4e8;
+    padding: 2rem 0;
+}
+
+.testimonials blockquote,
+.testimonials blockquote p
+{
+	color: #333;
+	font-style: italic;
+}
+
+.testimonials blockquote
+{
+	border-left:none;
+}
+
+.testimonials cite
+{
+	color: #333;
+	font-style: normal;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.testimonials cite:before
+{
+	content:'';
+}

@@ -1,0 +1,57 @@
+<section class="page-header">
+	<div class="header-left">
+	<?php if(is_front_page()):?>
+		<img src="<?php echo get_template_directory_uri();?>/assets/images/logo-white-800px.jpg" alt="Backline Transport logo">
+	<?php else:?>
+		<h1><?php the_title();?></h1>
+	<?php endif;?>
+	<div class="slashed-shape"></div>
+	<div class="slashed-shape-mobile"></div>
+	</div><!--end header-left
+ --><div class="header-right">
+
+	</div><!--end header-right-->
+</section>
+<?php if(is_front_page()):?>
+
+<div class="sticky-anchor"></div>
+<section class="big-buttons secondary-bg stickydiv">
+<div class="row">
+<div class="big-button driver-button small-6 columns">
+	<div class="row">
+		<h2 class="medium-6 columns">Drivers</h2>
+		<p class="medium-6 columns small hide-for-small">If you are a top rate driver who would like to know more about joining our team, CLICK HERE</p>
+	</div>
+	<a href="http://backlinetransport.co.uk/drivers/"></a>
+</div><!--end big-button-->
+<div class="big-button client-button small-6 columns primary-bg">
+	<div class="row">
+		<h2 class="medium-6 columns">Clients</h2>
+		<p class="medium-6 columns small hide-for-small">If you would like to know more about how we can help you, and see our services, CLICK HERE</p>
+	</div>
+	<a href="http://backlinetransport.co.uk/clients"></a>
+	<div class="slashed-shape2"></div>
+</div><!--end big-button-->
+</div>
+<a href="/drivers" class="overlay-link overlay-link-left"></a>
+<a href="/clients" class="overlay-link overlay-link-right"></a>
+</section>
+
+<section class="main-content">
+<div class="row">
+	<div class="medium-4 columns">
+		<div id="homepage-map"></div>
+	</div>
+	<div class="medium-8 columns">
+	<?php the_content(); ?>
+	</div>
+</div>
+</section>
+
+<?php else:?>
+	<div class="row">
+		<div class="medium-8 columns">
+		<?php the_content(); ?>
+		</div>
+	</div>
+<?php endif;?>

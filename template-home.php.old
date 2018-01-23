@@ -1,0 +1,30 @@
+<?php
+if(!is_user_logged_in() && get_field('holding_page_redirect', 'option') == 1)
+        {
+            get_template_part('parts/content', 'holdingpage');
+            die();
+        }
+?>
+<?php
+/*
+Template Name: Home
+*/
+?>
+
+<?php get_header(); ?>
+			
+	<div id="content">
+	
+		<div id="inner-content">
+				
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+					   <?php the_content(); ?>
+					
+				<?php endwhile; endif; ?>							
+		    
+		</div> <!-- end #inner-content -->
+	
+	</div> <!-- end #content -->
+
+<?php get_footer(); ?>
