@@ -17,7 +17,7 @@ function image_sizes() {
     /*add_image_size('240x135', 240, 135, true); //(cropped)
     add_image_size('200x200', 200, 200, true); //(cropped)*/
     add_image_size('280x280', 280, 280, true); //(cropped)
-    add_image_size('clients', 280, 280, false); //(cropped)
+    add_image_size('staff', 100, 100, true); //(cropped)
     /*add_image_size('220x327', 220, 327, true); //(cropped)*/
     add_image_size('400x400', 400, 400, true); //(cropped)
     add_image_size('280x230', 280, 230, false); //(cropped)
