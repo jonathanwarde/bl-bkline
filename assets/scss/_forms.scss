@@ -63,14 +63,11 @@ textarea:focus
 	transition:all .2s linear;
 }
 
-.wpcf7-form-control.wpcf7-submit:hover {
+.wpjb-submit:hover {
     opacity: .6;
     transition:all .2s linear;
 }
 
-textarea.wpcf7-form-control.wpcf7-textarea {
-	    height:8rem;
-}
 
 @media only screen and (min-width:1024px) {
 	textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]
@@ -79,9 +76,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 		width:76%;
 	}
 	label {
-	    display: inline-block;
-	    width: 24%;
-	    vertical-align: top;
     	margin-top: 10px;
 	    white-space: nowrap;
 	}
@@ -98,15 +92,29 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 	    left: 2.5rem;
 	}
     .gform_wrapper textarea.medium {
-    height: 160px;
-    width: 49.5%;
-}
+        height: 160px;
+        width: 49.5%;
+    }
+    .wpjb-element-name-query,
+    .wpjb-element-name-type
+    {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .wpjb-element-name-location,
+    .wpjb-element-name-category
+    {
+        width: 49%;
+        float: right;
+        display: inline-block;
+    }
 }
 
 .gform_wrapper select, .gform_wrapper textarea,
-.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) 
+.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),.wpjb .wpjb-form div textarea, .wpjb .wpjb-form div select, .wpjb .wpjb-form div input[type=text], .wpjb .wpjb-form div input[type=password]
 {
-    border: 1px solid #008000;
+    border: 1px solid #52BD48;
 }
 
 .gform_footer input[type="submit"]

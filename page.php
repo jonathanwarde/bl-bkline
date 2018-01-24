@@ -17,7 +17,15 @@ if(!is_user_logged_in() && get_field('holding_page_redirect', 'option') == 1)
 			    	<?php the_content(); ?>
 
 			</main> <!-- end #main -->
-			<?php get_sidebar();?>
+			<?php
+				// not working - need to look at this
+				if(is_page('news')):
+				get_sidebar('sidebar2');
+				elseif(is_page('jobs')):
+				get_sidebar('sidebar1');
+				else:
+				get_sidebar();
+				endif;?>
 			</div>
 			<?php endwhile; endif; ?>
 		</div> <!-- end #inner-content -->

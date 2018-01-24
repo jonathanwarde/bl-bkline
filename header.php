@@ -30,10 +30,16 @@
 			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
 	    	<meta name="theme-color" content="#121212">
 	    <?php } ?>
-
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
 		<?php wp_head(); ?>
+		<script type='text/javascript'>
+		(function (d, t) {
+		  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		  bh.type = 'text/javascript';
+		  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=fzsa76o9kbugxr6c0sfogg';
+		  s.parentNode.insertBefore(bh, s);
+		  })(document, 'script');
+		</script>
 		<link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
 		<?php if(is_page('branches')):?>
 			<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBdaP-lD1prvE6G9Popi3wWbwBPBIrNbLo&sensor=false"></script>
