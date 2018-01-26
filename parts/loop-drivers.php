@@ -27,13 +27,13 @@
 	<div class="row">
 		<div class="big-button-3 small-6 columns">
 			<h5>Job Board</h5>
-			<a href="" class="pale-green">Find Your Job &rsaquo;</a>
-			<a href="" class="cover-link"></a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/jobs" class="pale-green">Find Your Job &rsaquo;</a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/jobs" class="cover-link"></a>
 		</div>
 		<div class="big-button-3 small-6 columns">
 			<h5>Training</h5>
-			<a href="">Start Learning &rsaquo;</a>
-			<a href="" class="cover-link"></a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/training">Start Learning &rsaquo;</a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/training" class="cover-link"></a>
 		</div>
 	</div>
 </div>

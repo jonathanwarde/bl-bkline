@@ -6,9 +6,9 @@ $the_query = new WP_Query( array(
 	while ( $the_query->have_posts() ) :
 	    $the_query->the_post();
 ?>
-<article class="">
+<article class="news-post">
 	<h2><a href="<?php the_permalink() ?>"><?php the_title();?></a></h2>
-			<?php the_content() ?>
+			<?php the_excerpt() ?>
     <a href="<?php the_permalink() ?>" class="button">Reserve your place</a>
 </article>
 <?php endwhile;?>

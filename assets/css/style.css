@@ -2576,7 +2576,9 @@ kbd {
     font-size: 2rem; } }
 .header-left h1 {
   color: #fff;
-  z-index: 1; }
+  z-index: 1;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 .service-title {
   font-size: 1rem;
@@ -2612,7 +2614,7 @@ kbd {
   max-width: 58rem; }
 
 section.main-content {
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem; }
 
 .centered {
@@ -2640,9 +2642,13 @@ section.main-content {
 .button {
   background: #4eb448;
   color: #fff;
-  padding: .3rem .6rem;
-  border-radius: 5px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4); }
+  padding: .7rem 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  border: none;
+  display: inline-block; }
 
 .arrow-button {
   position: relative; }
@@ -3062,7 +3068,24 @@ END HAMBURGER
 .page-header {
   overflow: hidden;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.page-header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00492e;
+  opacity: 1;
+  pointer-events: none;
+  transition: all .4s linear; }
+
+.loaded .page-header:after {
+  opacity: 0; }
 
 .header-left {
   display: inline-block;
@@ -3139,8 +3162,7 @@ END HAMBURGER
     height: 35rem;
     height: 60vh;
     max-height: 28rem;
-    overflow: hidden;
-    margin-bottom: auto; }
+    overflow: hidden; }
 
   .header-left {
     width: 55%;
@@ -3780,6 +3802,9 @@ a.register {
   color: #fff;
   font-weight: 700; }
 
+.big-button-2 {
+  margin-top: 2rem; }
+
 .big-button-2 span {
   display: block;
   font-size: 1rem;
@@ -3804,7 +3829,7 @@ a.register {
   text-align: center;
   color: #fff;
   font-weight: 700;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   position: relative; }
 
 .big-button-3 a.cover-link {
@@ -3908,7 +3933,8 @@ a.overlay-link.overlay-link-right {
   justify-content: center;
   margin-bottom: 1rem;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .big-white-button .cover-link {
   position: absolute;
@@ -3925,6 +3951,9 @@ a.overlay-link.overlay-link-right {
   color: #18b14f;
   font-weight: 600;
   white-space: nowrap; }
+
+.main-content.apply-buttons .columns:last-child {
+  float: left !important; }
 
 @media only screen and (min-width: 640px) {
   .big-white-button h3 {
@@ -4100,6 +4129,11 @@ textarea:focus {
 .wpjb-submit:hover {
   opacity: .6;
   transition: all .2s linear; }
+
+.single-events form {
+  background: #e9f4e8;
+  padding: 1rem;
+  margin-top: 1rem; }
 
 @media only screen and (min-width: 1024px) {
   textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
@@ -4298,6 +4332,9 @@ footer {
   clear: both;
   /*border-top: 3px solid #4eb448;*/
   padding-top: 2rem; }
+
+.home footer {
+  border-top: 3px solid #4eb448; }
 
 footer.footer nav ul {
   list-style-type: none;
@@ -5225,9 +5262,42 @@ address {
   padding: 5px 12px;
   font-size: 1rem; }
 
+section.branches {
+  background: #e9f4e8;
+  padding-top: 4rem;
+  padding-bottom: 1rem; }
+
+article.staff {
+  padding: 1rem;
+  border: 1px solid #18b14f;
+  margin-bottom: 1rem;
+  position: relative;
+  min-height: 9rem;
+  background: #fff; }
+
+article.staff h6 {
+  font-weight: 600; }
+
+.branch-deets {
+  margin-right: 100px; }
+
+.attachment-staff {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
+
+.branches .slick-dots li button::before {
+  font-size: 0;
+  background: green;
+  width: 24px;
+  height: 24px; }
+
+.branches .slick-dots {
+  top: -3.5rem; }
+
 .news-post {
   margin-bottom: 2rem;
-  border-bottom: 1px solid #e9f4e8;
+  border-bottom: 1px solid #52BD48;
   padding-bottom: 2rem; }
 
 .post-categories {
@@ -5260,6 +5330,15 @@ address {
 
 .testimonials cite:before {
   content: ''; }
+
+.logo-centered {
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  min-height: 4rem; }
+
+.logo-centered img {
+  display: inline-block !important;
+  max-width: 150px; }
 
 .sidebar {
   background: #e9f4e8;

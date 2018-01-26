@@ -22,26 +22,31 @@ jQuery(document).ready(function() {
   });
 
 
-if(jQuery('.cookie-bar').length){
-  jQuery('.cookie-bar').slideDown(600);
-}
+  if(jQuery('.cookie-bar').length){
+    jQuery('.cookie-bar').slideDown(600);
+  }
 
 
 
 
-jQuery('.overlay-link-left').hover(
-       function(){ jQuery('.driver-button p').addClass('hover') },
-       function(){ jQuery('.driver-button p').removeClass('hover') },
-       function(){ jQuery('.driver-button .arrow').addClass('show') },
-       function(){ jQuery('.driver-button .arrow').removeClass('show') }
-);
+  jQuery('.overlay-link-left').hover(
+         function(){ jQuery('.driver-button p').addClass('hover') },
+         function(){ jQuery('.driver-button p').removeClass('hover') },
+         function(){ jQuery('.driver-button .arrow').addClass('show') },
+         function(){ jQuery('.driver-button .arrow').removeClass('show') }
+  );
 
-jQuery('.overlay-link-right').hover(
-       function(){ jQuery('.client-button p').addClass('hover') },
-       function(){ jQuery('.client-button p').removeClass('hover') },
-       function(){ jQuery('.client-button .arrow').addClass('show') },
-       function(){ jQuery('.driver-button .arrow').removeClass('show') }
-);
+  jQuery('.overlay-link-right').hover(
+         function(){ jQuery('.client-button p').addClass('hover') },
+         function(){ jQuery('.client-button p').removeClass('hover') },
+         function(){ jQuery('.client-button .arrow').addClass('show') },
+         function(){ jQuery('.driver-button .arrow').removeClass('show') }
+  );
+
+
+  window.onload = function() {
+      jQuery('body').addClass('loaded');
+  };
 
 
 });
@@ -126,33 +131,38 @@ jQuery(document).ready(function(){
   jQuery('.slick-branches').slick({
     slidesToShow: 1,
     slidesToScroll:1,
-    dots: false,
+    dots: true,
     centerMode: false,
     focusOnSelect: true,
     arrows:false,
     autoplay:true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
     responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true
-        //dots: true
+        infinite: true,
+        dots: true
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots:true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots:true
       }
     }
     // You can unslick at a given breakpoint now by adding:

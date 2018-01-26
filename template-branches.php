@@ -4,14 +4,10 @@ if(!is_user_logged_in() && get_field('holding_page_redirect', 'option') == 1)
             get_template_part('parts/content', 'holdingpage');
             die();
         }
-?>
-<?php
 /*
 Template Name: Branches
 */
-?>
-
-<?php get_header();?>
+get_header();?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="inner-content">
 <h1 class="green-bar-centered"><?php the_title();?></h1>
@@ -27,6 +23,9 @@ if( have_rows('branches') ):?>
 		 	<?php
 		    while ( have_rows('branches') ) : the_row();?>
 		    <li>
+		    	<div class="medium-6 columns">
+		    			<?php the_sub_field('branch_address');?>
+		    		</div><!--end branch half-->
 		    	<?php if(have_rows('staff')):?>
 					<div class="medium-6 columns">
 		    	<?php while(have_rows('staff')):the_row();?>
@@ -44,9 +43,7 @@ if( have_rows('branches') ):?>
 		    	<?php endwhile;?>
               		</div><!--end branch half-->
 		        <?php endif;?>
-		    		<div class="medium-6 columns">
-		    			<?php the_sub_field('branch_address');?>
-		    		</div><!--end branch half-->
+		    		
 		    </li>
 		    <?php
 		    endwhile;?>

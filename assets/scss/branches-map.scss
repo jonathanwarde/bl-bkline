@@ -59,3 +59,44 @@ box-shadow: 10px 12px 13px -10px rgba(0,0,0,0.75);
     padding: 5px 12px;
     font-size: 1rem;
 }
+
+section.branches {
+    background: #e9f4e8;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+article.staff {
+    padding: 1rem;
+    border: 1px solid #18b14f;
+    margin-bottom: 1rem;
+    position: relative;
+    min-height: 9rem;
+    background:#fff;
+}
+
+article.staff h6 {
+    font-weight: 600;
+}
+.branch-deets {
+    margin-right: 100px;
+}
+
+.attachment-staff {
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+}
+
+.branches .slick-dots li button::before
+{
+    font-size: 0;
+    background:green;
+    width: 24px;
+height: 24px;
+}
+
+.branches .slick-dots
+{
+    top: -3.5rem;
+}

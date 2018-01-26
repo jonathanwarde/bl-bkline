@@ -26,13 +26,13 @@
 	<div class="row">
 		<div class="big-button-3 small-6 columns">
 			<h5>Branches</h5>
-			<a href="/branches" class="pale-green">Find Your Nearest Branches &rsaquo;</a>
-			<a href="" class="cover-link"></a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/branches" class="pale-green">Find Your Nearest Branches &rsaquo;</a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/branches" class="cover-link"></a>
 		</div>
 		<div class="big-button-3 small-6 columns">
 			<h5>Get in Touch</h5>
-			<a href="/contact-us">Contact Us &rsaquo;</a>
-			<a href="" class="cover-link"></a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/contact-us">Contact Us &rsaquo;</a>
+			<a href="http://backlinelogistics.blazeoven.co.uk/contact-us" class="cover-link"></a>
 		</div>
 	</div>
 </div>
@@ -49,8 +49,16 @@ if( have_rows('testimonials') ):?>
 		 	<?php
 		    while ( have_rows('testimonials') ) : the_row();?>
 		    	<li>
-				<img src="<?php the_sub_field('testimonial_image');?>" alt="">
 		        <blockquote>
+		        <div class="logo-centered">
+				<?php
+				$image = get_sub_field('testimonial_image');
+				$size = '280x230';
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size );
+				}
+				?>
+		        </div>
 		        <?php the_sub_field('testimonial');?>
 		 		<cite><?php the_sub_field('cite');?></cite>
 		        </blockquote>

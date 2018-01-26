@@ -4,14 +4,10 @@ if(!is_user_logged_in() && get_field('holding_page_redirect', 'option') == 1)
             get_template_part('parts/content', 'holdingpage');
             die();
         }
-?>
-<?php
 /*
 Template Name: Clients
 */
-?>
-
-<?php get_header();
+get_header();
 
 			$feat_image_small = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '960x540')[0];
 			$feat_image_large = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '1280x720')[0];

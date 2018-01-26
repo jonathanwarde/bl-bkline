@@ -27,3 +27,15 @@
 {
 	content:'';
 }
+
+.logo-centered
+{
+	text-align:center;
+	margin:0 auto 1rem auto;
+	min-height:4rem;
+}
+.logo-centered img
+{
+	display:inline-block !important;
+	max-width: 150px;
+}

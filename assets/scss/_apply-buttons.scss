@@ -15,6 +15,7 @@
     margin-bottom: 1rem;
     flex-direction: column;
     position: relative;
+    text-align: center;
 }
 
 .big-white-button .cover-link {
@@ -34,6 +35,10 @@
     color: #18b14f;
     font-weight: 600;
     white-space: nowrap;
+}
+
+.main-content.apply-buttons .columns:last-child {
+    float: left !important;
 }
 
 @media only screen and (min-width:640px){
